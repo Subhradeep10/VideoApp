@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1011694395410",
+    "project_id": "video-app-cae04",
+    "storage_bucket": "video-app-cae04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011694395410:android:ca6a2f521aaf289cc638cb",
+        "android_client_info": {
+          "package_name": "com.example.videoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011694395410-sis89l9u6fu3fne539irag142g1eomhr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL9afWqCg20gQPAoeH65m46rGvLHtmcFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011694395410-sis89l9u6fu3fne539irag142g1eomhr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
