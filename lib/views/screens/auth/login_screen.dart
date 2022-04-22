@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:videoapp/const.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -7,6 +8,7 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        padding: EdgeInsets.symmetric(horizontal: 20),
         alignment: Alignment.center,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -20,6 +22,7 @@ class LoginScreen extends StatelessWidget {
                 prefixIcon: Icon(Icons.email),
               ),
             ),
+            SizedBox(height: 20),
             TextField(
               decoration: InputDecoration(
                 border: OutlineInputBorder(
@@ -29,6 +32,25 @@ class LoginScreen extends StatelessWidget {
                 prefixIcon: Icon(Icons.lock),
               ),
             ),
+            SizedBox(height: 20),
+            Container(
+              width: MediaQuery.of(context).size.width - 40,
+              height: 50,
+              decoration: BoxDecoration(
+                color: buttonColor,
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Center(
+                child: Text(
+                  'Login',
+                  style: TextStyle(
+                    color: backgroundColor,
+                    fontSize: 17,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            )
           ],
         ),
       ),
