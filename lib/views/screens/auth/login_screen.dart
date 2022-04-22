@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:videoapp/const.dart';
+import 'package:videoapp/views/screens/auth/signup.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -34,6 +35,7 @@ class LoginScreen extends StatelessWidget {
             ),
             SizedBox(height: 20),
             InkWell(
+              onTap: () {},
               child: Container(
                 width: MediaQuery.of(context).size.width - 40,
                 height: 50,
@@ -53,6 +55,36 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
               ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Don\'t have an account?',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 17,
+                  ),
+                ),
+                SizedBox(width: 5),
+                InkWell(
+                  onTap: () {
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => Signup()));
+                  },
+                  child: Text(
+                    'Register',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 17,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ],
             )
           ],
         ),
