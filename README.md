@@ -15,6 +15,11 @@
 
 <h1 align=center> Application Preview 👀 </h1>
 <p align="center">
+    <img src="https://github.com/Subhradeep10/VideoApp/blob/master/screenshots/Screenshot_1650722758.png" height="363px" width="181px">
+  <img src="https://github.com/Subhradeep10/VideoApp/blob/master/screenshots/Screenshot_1650722765.png" height="363px" width="181px">
+  <img src="https://github.com/Subhradeep10/VideoApp/blob/master/screenshots/Screenshot_1650722793.png" height="363px" width="181px">
+  <img src="https://github.com/Subhradeep10/VideoApp/blob/master/screenshots/Screenshot_1650722799.png" height="363px" width="181px">
+<p align="center">
   <a href="https://github.com/Subhradeep10/VideoApp/blob/master/Videoapp.apk">
     <img src="https://forthebadge.com/images/badges/check-it-out.svg">
   </a>
