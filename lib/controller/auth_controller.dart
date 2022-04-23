@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:get/get.dart';
 import 'package:videoapp/const.dart';
+import 'package:videoapp/model/user.dart' as model;
 
 class AuthController extends GetxController {
   //Uploading Picked Image to storage
@@ -29,6 +30,15 @@ class AuthController extends GetxController {
             email: email, password: password);
 
         String downloadUrl = await _uploadImageStorage(image);
+        model.User user = model.User(
+            name: username,
+            profilePhoto: downloadUrl,
+            email: email,
+            uid: cred.user!.uid);
+        await firestore
+            .collection('users')
+            .doc(cred.user!.uid)
+            .set(user.toJson());
       }
     } catch (err) {
       Get.snackbar("Error creating account", err.toString());
