@@ -25,3 +25,27 @@
   <a href="https://github.com/Subhradeep10/VideoApp/releases/download/v-1.0/VideoApp.apk">
     <img src="https://forthebadge.com/images/badges/check-it-out.svg">
   </a>
+
+  <h1 align=center>🛠️ Installation Steps</h1>
+
+
+1. Open Terminal and Clone the Repo
+
+```bash
+  git clone https://github.com/Subhradeep10/VideoApp.git
+```
+ 2. Cd Over 
+ 
+```bash
+   cd VideoApp
+```
+ 3. Run Pub
+```
+   Flutter pub get
+```
+4. Run App 
+```
+  Task Completed !!
+```
+
+<br>
