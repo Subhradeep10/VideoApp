@@ -1,5 +1,7 @@
 <h1 align=center> 🎥VideoApp</h1>
 
+<h2 align=center>
+  
 ![Issues](https://img.shields.io/github/issues/Subhradeep10/VideoApp)
 ![Pull Requests](https://img.shields.io/github/issues-pr/subhradeep10/VideoApp)
 ![Forks](https://img.shields.io/github/forks/subhradeep10/VideoApp)
