@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:videoapp/const.dart';
+import 'package:videoapp/controller/auth_controller.dart';
 import 'package:videoapp/views/screens/auth/signup.dart';
 
 class LoginScreen extends StatelessWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  final _email = TextEditingController();
+  final _password = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +17,7 @@ class LoginScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextField(
+              controller: _email,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20),
@@ -25,6 +28,8 @@ class LoginScreen extends StatelessWidget {
             ),
             SizedBox(height: 20),
             TextField(
+              controller: _password,
+              obscureText: true,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20),
@@ -35,7 +40,12 @@ class LoginScreen extends StatelessWidget {
             ),
             SizedBox(height: 20),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                authController.loginUser(
+                  _email.text,
+                  _password.text,
+                );
+              },
               child: Container(
                 width: MediaQuery.of(context).size.width - 40,
                 height: 50,
