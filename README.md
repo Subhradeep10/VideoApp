@@ -1,16 +1,20 @@
-# videoapp
+<h1 align=center> 🎥VideoApp</h1>
 
-A new Flutter project.
+![Issues](https://img.shields.io/github/issues/Subhradeep10/VideoApp)
+![Pull Requests](https://img.shields.io/github/issues-pr/subhradeep10/VideoApp)
+![Forks](https://img.shields.io/github/forks/subhradeep10/VideoApp)
+![Stars](https://img.shields.io/github/stars/subhradeep10/VideoApp)
+[![License](https://img.shields.io/github/license/subhradeep10/VideoApp)](https://github.com/subhradeep10/VideoApp)
+![](https://img.shields.io/github/repo-size/subhradeep10/VideoApp.svg?label=Repo%20size&style=flat-square)&nbsp;
 
-## Getting Started
+<h1 align=center> Tech Stack 🔥 </h1>  
+  <p align="center">
+  <img src="https://img.shields.io/badge/dart-%230175C2.svg?&style=for-the-badge&logo=dart&logoColor=white"/> <img src="https://img.shields.io/badge/Flutter%20-%2302569B.svg?&style=for-the-badge&logo=Flutter&logoColor=white" /> <img src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/firebase%20-%23121011.svg?&style=for-the-badge&logo=firebase&logoColor=orange">
+  </p>
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<h1 align=center> Application Preview 👀 </h1>
+<p align="center">
+  <a href="https://github.com/Subhradeep10/VideoApp/blob/master/Videoapp.apk">
+    <img src="https://forthebadge.com/images/badges/check-it-out.svg">
+  </a>
