@@ -1,68 +1,55 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:videoapp/const.dart';
-import 'dart:async';
+import 'package:videoapp/constants.dart';
+import 'package:videoapp/views/widgets/custom_icon.dart';
 
 class HomeScreen extends StatefulWidget {
+  const HomeScreen({Key? key}) : super(key: key);
+
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final pages = [
-    Text('Home Page'),
-    Text('Search Page'),
-    Text('Upload Page'),
-    Text('Message Page'),
-    Text('Profile Page'),
-  ];
-  int pageIndex = 0;
+  int pageIdx = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: CupertinoTabBar(
-          currentIndex: pageIndex,
-          onTap: (index) {
-            setState(() {
-              pageIndex = index;
-            });
-          },
-          backgroundColor: backgroundColor,
-          activeColor: Color.fromARGB(255, 255, 255, 255),
-          items: [
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.home,
-                  size: 25,
-                ),
-                label: "Home"),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.search,
-                  size: 25,
-                ),
-                label: "Search"),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.home,
-                  size: 25,
-                ),
-                label: "Home"),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.message,
-                  size: 25,
-                ),
-                label: "Message"),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.person,
-                  size: 25,
-                ),
-                label: "Profile"),
-          ]),
-      body: pages[pageIndex],
+      bottomNavigationBar: BottomNavigationBar(
+        onTap: (idx) {
+          setState(() {
+            pageIdx = idx;
+          });
+        },
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: backgroundColor,
+        selectedItemColor: Colors.red,
+        unselectedItemColor: Colors.white,
+        currentIndex: pageIdx,
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home, size: 30),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search, size: 30),
+            label: 'Search',
+          ),
+          BottomNavigationBarItem(
+            icon: CustomIcon(),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.message, size: 30),
+            label: 'Messages',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person, size: 30),
+            label: 'Profile',
+          ),
+        ],
+      ),
+      body: pages[pageIdx],
     );
   }
 }

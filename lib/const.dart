@@ -2,13 +2,14 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
+import 'package:videoapp/views/screens/add_video_screen.dart';
 
-import 'controller/auth_controller.dart';
+import 'controllers/auth_controller.dart';
 
 final pages = [
   Text('Home Page'),
   Text('Search Page'),
-  Text('Upload Page'),
+  AddVideoScreen(),
   Text('Message Page'),
   Text('Profile Page'),
 ];
