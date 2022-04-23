@@ -3,7 +3,9 @@ import 'package:videoapp/const.dart';
 import 'package:videoapp/views/screens/auth/login_screen.dart';
 
 class Signup extends StatelessWidget {
-  const Signup({Key? key}) : super(key: key);
+  final TextEditingController _username = TextEditingController();
+  final TextEditingController _email = TextEditingController();
+  final TextEditingController _password = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -33,6 +35,7 @@ class Signup extends StatelessWidget {
             ),
             SizedBox(height: 20),
             TextField(
+              controller: _username,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20),
@@ -43,6 +46,7 @@ class Signup extends StatelessWidget {
             ),
             SizedBox(height: 20),
             TextField(
+              controller: _email,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20),
@@ -53,6 +57,7 @@ class Signup extends StatelessWidget {
             ),
             SizedBox(height: 20),
             TextField(
+              controller: _password,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20),
@@ -63,7 +68,8 @@ class Signup extends StatelessWidget {
             ),
             SizedBox(height: 20),
             InkWell(
-              onTap: () {},
+              onTap: () =>
+                  authController.registerUser(username, email, password, image),
               child: Container(
                 width: MediaQuery.of(context).size.width - 40,
                 height: 50,

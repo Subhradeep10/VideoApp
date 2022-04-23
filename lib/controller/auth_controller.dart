@@ -39,6 +39,8 @@ class AuthController extends GetxController {
             .collection('users')
             .doc(cred.user!.uid)
             .set(user.toJson());
+      } else {
+        Get.snackbar("Error Creating Account", "Please Enter All the fields");
       }
     } catch (err) {
       Get.snackbar("Error creating account", err.toString());
