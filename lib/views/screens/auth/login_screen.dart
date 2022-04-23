@@ -18,7 +18,7 @@ class LoginScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Tiktok Clone',
+              'VideoApp',
               style: TextStyle(
                 fontSize: 35,
                 color: buttonColor,
@@ -78,6 +78,7 @@ class LoginScreen extends StatelessWidget {
                   child: Text(
                     'Login',
                     style: TextStyle(
+                      color: backgroundColor,
                       fontSize: 20,
                       fontWeight: FontWeight.w700,
                     ),
@@ -105,7 +106,10 @@ class LoginScreen extends StatelessWidget {
                   ),
                   child: Text(
                     'Register',
-                    style: TextStyle(fontSize: 20, color: buttonColor),
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: buttonColor,
+                        fontWeight: FontWeight.bold),
                   ),
                 ),
               ],
