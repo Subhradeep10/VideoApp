@@ -5,6 +5,14 @@ import 'package:flutter/material.dart';
 
 import 'controller/auth_controller.dart';
 
+final pages = [
+  Text('Home Page'),
+  Text('Search Page'),
+  Text('Upload Page'),
+  Text('Message Page'),
+  Text('Profile Page'),
+];
+
 //Colors
 const backgroundColor = Color.fromARGB(255, 4, 31, 53);
 var buttonColor = Color.fromARGB(255, 242, 249, 255);
